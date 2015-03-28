@@ -1,0 +1,122 @@
+<window type="dialog" id="102">
+  <defaultcontrol always="true">21</defaultcontrol>
+  <include>transition_Dialog</include>
+  <coordinates>
+    <system>1</system>
+    <posx>390</posx>
+    <posy>110</posy>
+  </coordinates>
+  <controls>
+	<control type="image">
+		<width>600</width>
+		<height>475</height>
+		<include>dialog_Window</include>
+	</control>
+	<control type="label">
+		<width>592</width>
+		<label>Add timer</label>
+		<label>$ADDON[pvr.nextpvr 30100]</label>
+		<include>dialog_Windowtitle</include>
+	</control>
+	<control type="group">
+		<left>4</left>
+		<top>60</top>
+		<control type="label" id="20">
+			<width>592</width>
+			<label>Everybody Loves Raymond</label>
+			 <!--<label>filled in by code</label>-->
+			<textcolor>Color4</textcolor>
+			<include>dialog_Header</include>
+			<include>dialog_ControlCommons</include>
+		</control>
+		<control type="label" id="24">
+			<top>30</top>
+			<width>592</width>
+			<height>60</height>
+			<label>Keffiyeh fanny pack stumptown, paleo try-hard narwhal aesthetic Banksy. Pop-up fashion axe seitan mixtape, single-origin coffee mustache typewriter Shoreditch deep v hashtag flannel brunch YOLO. Thundercats meggings typewriter, four loko yr ennui pork belly normcore sriracha Tonx tofu literally lo-fi fanny pack. YOLO Helvetica typewriter next level, authentic Schlitz quinoa fap post-ironic occupy Tumblr kale chips Intelligentsia letterpress. Selvage pickled flexitarian, Cosby sweater try-hard</label>
+			<aligny>top</aligny>
+			<wrapmultiline>true</wrapmultiline>
+			 <!--<label>filled in by code</label>-->
+			<textcolor>Color4</textcolor>
+			<include>dialog_ControlCommons</include>
+		</control>
+		<control type="image">
+			<top>130</top>
+			<width>592</width>
+			<include>dialog_Separator</include>
+		</control>
+		<control type="grouplist" id="5">
+			<top>130</top>
+			<width>592</width>
+			<height>200</height>
+			<itemgap>0</itemgap>
+			<onup>9001</onup>
+			<ondown>9001</ondown>
+			<!--recording type-->
+			<control type="spincontrolex" id="21">
+				<width>592</width>
+				<label>recording type</label>
+				<label>$ADDON[pvr.nextpvr 30120]</label>
+				<include>dialog_ControlCommons</include>
+				<include>dialog_Spin</include>
+			</control>
+			<!--pre-padding-->
+			<control type="spincontrolex" id="25">
+				<width>592</width>
+				<label>pre-padding</label>
+				<label>$ADDON[pvr.nextpvr 30132]</label>
+				<include>dialog_ControlCommons</include>
+				<include>dialog_Spin</include>
+			</control>
+			<!--post-padding-->
+			<control type="spincontrolex" id="26">
+				<width>592</width>
+				<label>post-padding</label>
+				<label>$ADDON[pvr.nextpvr 30133]</label>
+				<include>dialog_ControlCommons</include>
+				<include>dialog_Spin</include>
+			</control>
+			<!--keep count-->
+			<control type="spincontrolex" id="23">
+				<width>592</width>
+				<label>keep count</label>
+				<label>$ADDON[pvr.nextpvr 30130]</label>
+				<include>dialog_ControlCommons</include>
+				<include>dialog_Spin</include>
+			</control>
+			<!--recording entry-->
+			<control type="spincontrolex" id="27">
+				<width>592</width>
+				<label>recording entry</label>
+				<label>$ADDON[pvr.nextpvr 30134]</label>
+				<include>dialog_ControlCommons</include>
+				<include>dialog_Spin</include>
+			</control>
+		</control>
+	</control>
+	<!--dialog controls-->
+	<control type="group" id="9001">
+		<top>410</top>
+		<left>330</left>
+		<!--ok-->
+		<control type="button" id="1">
+			<label>$LOCALIZE[107]</label>
+			<onup>27</onup>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<ondown>21</ondown>
+			<include>dialog_WindowButton</include>
+		</control>
+		<!--cancel-->
+		<control type="button" id="2">
+			<left>130</left>
+			<label>$LOCALIZE[222]</label>
+			<onup>27</onup>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<ondown>21</ondown>
+			<include>dialog_WindowButton</include>
+		</control>
+	</control>
+  </controls>
+</window>

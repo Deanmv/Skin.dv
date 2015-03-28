@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol>1</defaultcontrol>
+	<visible>Window.IsActive(fullscreenvideo) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsActive(infodialog) | Window.IsActive(SubtitleSearch) | Player.ShowCodec]</visible>
+	<include>transition_OSD</include>
+	<controls>
+		<control type="group">
+			<!--clock-->
+			<control type="group">
+				<include>clock</include>
+				<visible>Player.Paused</visible>
+			</control>
+			<!--media info-->
+			<control type="group">
+				<include>osd_Video</include>
+				<visible>VideoPlayer.Content(LiveTV) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused]</visible>
+			</control>
+			<control type="group">
+				<!--player status-->
+				<control type="label"id="1">
+					<left>40</left>
+					<top>30</top>
+					<width>screen_Width</width>
+					<label>$VAR[player_Status]</label>
+					<textcolor>Color1</textcolor>
+					<font>light_Header</font>
+				</control>
+				<!--seekbar-->
+				<include>osd_Seekbar</include>
+				<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching</visible>
+			</control>
+		</control>
+	</controls>
+</window>
