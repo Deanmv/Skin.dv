@@ -584,7 +584,7 @@
 						<onleft>501</onleft>
 						<onback>501</onback>
 						<include>home_SubMenuButton</include>
-						<visible>!Skin.HasSetting(homemenu.music.disable) + Skin.HasSetting(musicmenu.partymode) + [!Skin.HasSetting(homemenu.music.disable) + []Control.HasFocus(5555) | Control.HasFocus(511) | Skin.String(HomeSub,$LOCALIZE[2])]</visible>
+						<visible>!Skin.HasSetting(homemenu.music.disable) + Skin.HasSetting(musicmenu.partymode) + [!Skin.HasSetting(homemenu.music.disable) + Control.HasFocus(5555) | Control.HasFocus(511) | Skin.String(HomeSub,$LOCALIZE[2])]</visible>
 					</control>
 					<!--music lastfm-->
 					<control type="button" id="512">
